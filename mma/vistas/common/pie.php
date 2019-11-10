@@ -3,7 +3,7 @@
     <div class="col-12">
 
       <p>
-        Pagina Diseñada por sergio acosta.
+        Pagina Diseñada en ComunidadIt 2019.
       </p>
     
     </div>

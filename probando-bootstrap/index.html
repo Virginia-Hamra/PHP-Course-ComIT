@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--importe desde link bootstrap.min.css-->
+
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--importe desde carpeta descargada fontawesome for web(recursos ofFline)-->
+	<link rel="stylesheet" type="text/css" href="file:///C:/Users/Vir/Downloads/fontawesome-free-5.10.1-web/css/all.css">
+	<!--importe desde carpeta mi archivo css-->
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+
+
+	<title>Sonovics</title>
+	
+</head>
+
+<body>
+
+  <!--nav bar snippet source bootstrap components-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><!--logo sonovics--><img src="images/you.png" width="30" height="30" class="d-inline-block align-top" alt=""> Sonovics</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Sobre nosotros<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Recursos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Portafolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ConectArts</a>
+      </li>
+    </ul>
+
+    <!-- boton de busqueda -->
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 " type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
+
+<!-- carousel -->
+<div class="container-fluid">
+
+	<div class="bd-example mt-2">
+	  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+	    <ol class="carousel-indicators">
+	      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+	      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+	      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+	    </ol>
+
+	    <div class="carousel-inner">
+	      <div class="carousel-item active">
+	        <img src="images/image1.jpg" class="d-block w-100" alt="...">
+	        <div class="carousel-caption d-none d-md-block">
+	          <h5>Producción Musical Integral</h5>
+	          <p>Te acompañamos durante el proceso creativo.</p>
+	        </div>
+	      </div>
+
+	      <div class="carousel-item">
+	        <img src="images/image2.jpg" class="d-block w-100" alt="...">
+	        <div class="carousel-caption d-none d-md-block">
+	          <h5>Training en Software</h5>
+	          <p>Ableton 10, Reason 10, Armado de Set Live</p>
+	        </div>
+	      </div>
+
+	      <div class="carousel-item">
+	        <img src="images/image3.jpg" class="d-block w-100" alt="...">
+	        <div class="carousel-caption d-none d-md-block">
+	          <h5>El Toque Humano</h5>
+	          <p>Conectando la música, el cine y la escritura</p>
+	        </div>
+	      </div>
+	    </div>
+	    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+	      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+	      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+	</div>
+</div>
+<!-- formulario de contacto-->
+	<div class="container">
+	<span><h4 class="font-weight-normal mt-3 mb-4 text-center shadow p-4 mb-4 bg-white">Dejanos tus datos y participa por un curso gratis</h4></span>	
+		<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: #0d0d0d}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #298759 !important;} .bootstrap-iso .btn-custom{background: #298759} .bootstrap-iso .btn-custom:hover{background: #157345;}.bootstrap-iso .outline, .bootstrap-iso .outline:focus{background-color: transparent; border: 2px solid #298759} .bootstrap-iso .outline:hover{background-color: transparent; border: 2px solid#51af81; color: #51af81 !important} .asteriskField{color: red;}</style>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+
+   <div class="col-md-6 col-sm-6 col-xs-12">
+    <form method="post">
+     <div class="form-group ">
+      <label class="control-label requiredField" for="name">
+       Nombre
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="email">
+       Email
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="email" name="email" placeholder="Ingresa tu email" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="subject">
+       Asunto
+      </label>
+      <input class="form-control" id="subject" name="subject" placeholder="Curso de inter&eacute;s o consulta general" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="message">
+       Mensaje
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <textarea class="form-control" cols="40" id="message" name="message" placeholder="Escribe tu mensaje" rows="10"></textarea>
+     </div>
+     <div class="form-group">
+      <div>
+       <button class="btn btn-custom outline" name="submit" type="submit">
+        Enviar
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+
+	<div class="col-md-6">
+			<div class="card">
+				<h5 class="card-header">
+					Card title
+				</h5>
+				<div class="card-body">
+					<p class="card-text">
+						Card content
+					</p>
+				</div>
+				<div class="card-footer">
+					Card footer
+				</div>
+			</div>
+			<div class="card">
+				<h5 class="card-header">
+					Card title
+				</h5>
+				<div class="card-body">
+					<p class="card-text">
+						Card content
+					</p>
+				</div>
+				<div class="card-footer">
+					Card footer
+				</div>
+			</div>
+			<div class="media">
+				<img class="mr-3" alt="Bootstrap Media Preview" src="https://www.layoutit.com/img/sports-q-c-64-64-8.jpg">
+				<div class="media-body">
+					<h5 class="mt-0">
+						something
+					</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+					
+						
+
+
+  </div>
+ </div>
+</div>
+
+	</div>
+
+
+	<div class="container ">
+		<div class="col-span3 .bg-primary">
+			
+		</div>
+
+
+
+
+
+
+
+
+	</div>
+
+<!-- footer ojo que a los íconos firefox no los renderiza-->
+<section id="footer">
+	<div class="container">
+
+        <div class="text-center center-block">
+            <h4 class="font-weight-light font-italic mt-4">- Seguinos -</h4>
+            <br />
+            
+
+            <a href="https://instagram.com/bootsnipp"><i class="fab fa-instagram fa-3x social"></i></a>	
+
+            <a href="https://www.facebook.com/bootsnipp">
+            <i class="fab fa-facebook-square fa-3x social"></i></a>
+	      
+
+	        <a href="https://twitter.com/bootsnipp"><i class="fab fa-twitter-square fa-3x social"></i></a>
+           
+
+            <a href="https://youtube.com/bootsnipp"> <i class="fab fa-youtube-square fa-3x social"></i></a>
+
+
+	        <a href="https://reddit.com"><i class="fab fa-reddit fa-3x social"></i></a>   
+	            
+	</div>
+ 	<hr>
+			<!-- debajo de la línea -->
+			</div>	
+			<!-<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black">
+
+					<p class="h6">&copy 2019 by<a class="ml-1" href="https://www.sonovics.com" target="_blank">Sonovics</a></p>
+
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

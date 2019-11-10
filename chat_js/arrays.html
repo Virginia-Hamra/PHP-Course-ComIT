@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Intro Arrays</title>
+	</head>
+
+	<body>
+
+		<div id="contenido">
+			
+		</div>
+		
+
+		<script>
+
+
+
+			var json1 = [
+							{
+								nombre: "Pablo",
+								apellido: "Tilli",
+								dni: "27948513",
+								telefonos:[
+											{
+												tipo: "personal",
+												numero: "1322312"
+											},
+											{
+												tipo: "empresa",
+												numero: "45454544"
+											},
+											{
+												tipo: "empresa",
+												numero: "33333"
+											}
+										  ]
+							},
+							{
+								nombre: "Juan",
+								apellido: "Perez",
+								dni: "22222222",
+									telefonos:[
+								{
+									tipo: "personal",
+									numero: "3333"
+								},
+								{
+									tipo: "personal",
+									numero: "444"
+								}
+							  ]
+							}
+						];
+
+
+			var contenido = document.getElementById("contenido");
+
+
+			contenido.innerHTML = "<ul>";
+
+			for ( i=0; i < json1.length; i++ ){
+
+				contenido.innerHTML += "<li>" + json1[i].nombre + ", " + json1[i].apellido;
+
+				contenido.innerHTML += "</li><li>" + json1[i].dni + "</li>";
+
+				for ( t=0; t < json1[i].telefonos.length; t++){
+					contenido.innerHTML += "<li>" + json1[i].telefonos[t].numero + "</li>";
+				}
+
+				contenido.innerHTML += "<br>";
+
+			}
+
+			contenido.innerHTML += "</ul>";
+
+
+
+
+
+			
+			
+			var nombre1 = "Juan";
+			var nombre2 = "Pepe";
+			var nombre3 = "Sofia";
+
+			var nombres = ["Juan", "Pepe", "Sofia", "Pedro", "Sofia", ["25", [ "hola", "chau"] ] ];
+			
+			/*nombres.push("Florencia");
+
+			nombres.push("Marcos");
+
+			nombres.push("Matias");
+
+			nombres.unshift("Pablo");*/
+
+	
+			
+			/*var apellido;
+			var dni;
+
+			var nombre = prompt("Ingrese el nombre");
+
+
+			while(nombre != "fin"){
+				apellido = prompt("Ingrese el apellido");
+				dni = prompt("Ingrese el DNI");
+
+				nombre = prompt("Ingrese el nombre");
+
+			}*/
+
+             /***************************************************/
+
+			/*do{
+
+				nombre = prompt("Ingrese el nombre");
+
+				if ( nombre != "fin"){
+					apellido = prompt("Ingrese el apellido");
+					dni = prompt("Ingrese el DNI");
+				}
+
+			}while(nombre != "fin")*/
+
+			/******************************************************/
+
+			/*for (i=0; i>=0; i=i+1){
+				nombre = prompt("Ingrese el nombre");
+				
+				if ( nombre != "fin"){
+					apellido = prompt("Ingrese el apellido");
+					dni = prompt("Ingrese el DNI");
+				}else{
+					i = -10;
+				}
+
+			}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			//var nombre = nombres[5][0][0];
+
+			
+
+			//alert(nombre);
+
+
+			var edad = 45;
+
+
+			//if ( nombres[1] == "Pepe" && (edad > 50 || nombres[3] == "Pedro")  ){
+			//	alert("Buen dia Pepe");
+
+
+
+			/*var i = nombres.length - 1;
+
+			while( i >= 0   ){
+				alert("Nombre: " + nombres[i]);
+
+				i = i - 1;
+
+			}*/
+			
+
+			/*for(i=nombres.length; i>=0; i=i+1){
+				alert("Nombre: " + nombres[i]);
+
+			}*/
+
+			/*var i=0;
+
+			do{
+				alert("Nombre: " + nombres[i]);
+
+				i=i+1;
+			}while (i< nombres.length)*/
+
+
+
+
+			/*alert();
+
+			i = i + 1;
+			alert("Nombre: " + nombres[i]);
+
+			i = i + 1;
+			alert("Nombre: " + nombres[i]);
+
+			i = i + 1;
+			alert("Nombre: " + nombres[i]);*/
+
+		</script>
+	</body>
+
+</html>

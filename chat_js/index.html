@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>PHP Messenger</title>
+
+		<link rel="stylesheet" href="css/estilos.css">
+	</head>
+
+	<body>
+		
+		<div id="contenedor">
+			
+			<div id="celular-1" class="celular">
+
+					<div class="pantalla-celular">
+
+						<div class="navbar">
+							<img src="images/foto_usuario1.png" alt="">
+							<p class="nombre-usuario">Usuario 1</p>
+						</div>
+
+						<div id="chat-celular-1" class="chat-celular"></div>
+
+
+						<div class="sendbar">							
+							
+							<input id="mensaje-chat1" type="text">
+
+							<a href="#" class="boton-enviar boton-enviar-imagen" onclick="mostrarMensaje(1, 'imagen_persona_1.jpg', 2);" ><img src="images/enviar_imagen.png"></a>
+
+							<a onclick="mostrarMensaje(1, document.getElementById('mensaje-chat1').value, 1);" class="boton-enviar boton-enviar-texto" href="#">
+								<img src="images/enviar_texto.png">
+							</a>
+						</div>
+
+					</div>
+				
+			</div>
+
+			<div id="celular-2" class="celular">
+
+					<div class="pantalla-celular" >
+						<div class="navbar">
+							<img src="images/foto_usuario2.png" alt="">
+							<p class="nombre-usuario">Usuario 2</p>
+						</div>
+
+						<div id="chat-celular-2" class="chat-celular"></div>
+
+						<div class="sendbar">							
+
+							<input id="mensaje-chat2" type="text">
+
+							<a href="#" class="boton-enviar boton-enviar-imagen" onclick="mostrarMensaje(2, 'imagen_persona_2.jpg', 2);" ><img src="images/enviar_imagen.png"></a>
+
+							<a onclick="mostrarMensaje(2, document.getElementById('mensaje-chat2').value, 1);" class="boton-enviar boton-enviar-texto" href="#">
+								<img src="images/enviar_texto.png">
+							</a>
+
+						</div>
+
+					</div>				
+			</div>
+
+		</div>
+
+	<script>
+
+
+
+
+
+
+			
+            function mostrarMensaje(emisor, mensaje, tipoMensaje){
+
+            	var chatCelularEmisor;
+            	var chatCelularReceptor;
+            	var textBoxMensajeEmisor;
+
+            	if (emisor == 1){
+					chatCelularEmisor = document.getElementById("chat-celular-1");
+					chatCelularReceptor = document.getElementById("chat-celular-2");
+					textBoxMensajeEmisor = document.getElementById("mensaje-chat1");
+				}
+				else{
+					chatCelularEmisor = document.getElementById("chat-celular-2");
+					chatCelularReceptor = document.getElementById("chat-celular-1");
+					textBoxMensajeEmisor = document.getElementById("mensaje-chat2");
+				}
+
+				switch (tipoMensaje) {
+
+					case 1: //Texto
+
+						if ( mensaje != "" ){	
+			    			chatCelularEmisor.innerHTML += "<div style='opacity:0;' class='enviado'><p><span class='mensaje'>" + mensaje + "</span></p></div>";
+
+			    			chatCelularReceptor.innerHTML += "<div style='opacity:0;' class='recibido'><p><span class='mensaje'>" + mensaje + "</span></p></div>";
+						
+							textBoxMensajeEmisor.value="";
+							textBoxMensajeEmisor.focus();
+						}
+						else {
+							alert("El mensaje esta vacio");
+						}
+
+						break;
+
+					case 2: //Imagen
+
+		        		chatCelularEmisor.innerHTML += "<div style='opacity:0;' class='enviado'><img src='images/" + mensaje + "'></img></div>";
+
+		        		chatCelularReceptor.innerHTML += "<div style='opacity:0;' class='recibido'><img src='images/" + mensaje + "'></img></div>";
+
+						break;
+				}
+				
+				setTimeout(function() {
+				  	chatCelularEmisor.lastChild.style.opacity = "1";
+					chatCelularReceptor.lastChild.style.opacity = "1";
+
+					chatCelularEmisor.scrollTop = chatCelularEmisor.scrollHeight;
+					chatCelularReceptor.scrollTop = chatCelularReceptor.scrollHeight;
+				}, 100);
+
+
+			
+            }
+            
+
+		</script>
+
+	</body>
+
+</html>

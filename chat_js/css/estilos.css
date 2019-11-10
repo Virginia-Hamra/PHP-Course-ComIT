@@ -1,0 +1,126 @@
+#contenedor{
+    width: 900px;
+
+    margin: 0 auto;
+}
+
+.pantalla-celular{
+    width: 329px;
+    height: 617px;
+    background: url('../images/fondochat.jpg');
+    position: absolute;
+    top: 59px;
+    left: 13px;
+    padding: 15px;
+
+}
+
+.chat-celular{
+    overflow-y: scroll;
+    
+    height: 455px;
+    border: 1px solid #4690b5;
+    padding: 20px;
+}
+
+.celular{
+    height: 778px;
+    width: 386px;
+    position: relative;
+    margin: 0 25px;
+
+    float: left;
+}
+
+#celular-1{   
+    background: url('file:///C:/Users/PC/Desktop/chat/images/usuario1.png');
+}
+
+#celular-2{
+    background: url('file:///C:/Users/PC/Desktop/chat/images/usuario2.png');
+}
+
+.navbar{
+    background: #4690b5;
+    padding: 8px;
+}
+
+.navbar img{
+    height: 40px;
+}
+
+.nombre-usuario{
+    margin-top: -30px;
+    margin-left: 60px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.sendbar{
+    position: absolute;
+    bottom: 10px;
+}
+
+.sendbar input[type="text"]{
+    width: 198px;
+    background: white;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 20px;
+    float: left;
+}
+
+.boton-enviar{
+    margin-top: -4px;
+    margin-left: 15px;
+}
+
+.boton-enviar-texto{
+    float: right;
+}
+
+.boton-enviar img{
+    width: 20px;
+    padding: 10px;
+    background: #4690b5;
+    border-radius: 20px;
+    
+}
+
+.boton-enviar-imagen{
+    float: left;
+}
+
+.mensaje{
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.recibido{
+    margin-right: 30px;
+}
+
+.enviado{
+    text-align: right;
+    margin-left: 30px;
+}
+
+.enviado span{
+    background: #9e9e9e;
+}
+
+.recibido span{
+    background: #8dc1ea;
+}
+
+.chat-celular img{
+    width: 90px;
+
+}
+
+.chat-celular div{
+    transition: all;
+    transition-duration: 1s;
+}

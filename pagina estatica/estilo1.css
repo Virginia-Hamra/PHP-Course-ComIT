@@ -1,0 +1,47 @@
+#contenedor{
+	width: 960px;
+
+	margin: auto;
+}
+
+header{
+	overflow: hidden;
+}
+
+#col-1{
+	height: 200px;
+	overflow: auto;
+
+}
+.fondo-rojo{
+	background-color: red;
+}
+
+.fondo-amarillo{
+	background-color: yellow;	
+}
+
+.fondo-gris{
+	background-color: gray;	
+}
+
+.fondo-verde{
+	background-color: green;
+}
+
+.flotar-izq{
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+
+.col-300{
+	width: 300px;
+}
+
+.margen-10{
+	margin: 0px 10px;
+}
+
